@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Chambeadores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="flex items-center justify-between py-4 px-6 bg-gray-800 text-white">
+    <!-- Logo a la izquierda -->
+    <img src="Logo.png" alt="Logo Los Chambeadores" class="h-24">
+    <!-- Título centrado -->
+    <h1 class="text-3xl font-bold">Los Chambeadores</h1>
+    <!-- Logo a la derecha -->
+    <img src="Logo.png" alt="Logo Los Chambeadores" class="h-24">
+  </header>
+
+  <main class="p-4">
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-center text-gray-600">Nuestros Servicios</h2>
+      <ul class="mt-4 space-y-4">
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Chapeada</h3>
+          <p>150 MXN por cuadrícula (5x3 metros). Precio varía según el trabajo y la densidad del monte.</p>
+        </li>
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Cambio de focos</h3>
+          <p>100 MXN. Precio puede variar según el mantenimiento necesario.</p>
+        </li>
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Cambio de tanques de gas</h3>
+          <p>100 MXN fijo, más el costo de relleno.</p>
+        </li>
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Limpieza de paredes</h3>
+          <p>300 MXN.</p>
+        </li>
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Instalación de inodoros</h3>
+          <p>200 MXN, más el costo del material necesario.</p>
+        </li>
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Aspirado de muebles</h3>
+          <p>100 MXN por hora.</p>
+        </li>
+        <li class="bg-gray-200 shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-bold">Barrido y trapeado</h3>
+          <p>150 MXN por hora. Precio depende del tamaño de la casa.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-8"> 
+      <div class="text-center mb-4">
+        <img src="Logo.png" alt="Logo" class="mx-auto w-1/4">
+      </div>
+        <h2 class="text-2xl font-semibold text-center text-gray-600">Contáctanos</h2>
+        <p class="text-center mb-4">Nos adaptamos a tu presupuesto. ¡Agenda una cita ahora!</p>
+        <div class="text-center">
+          <a href="https://wa.me/529838316263" target="_blank" class="inline-block bg-gray-700 text-gray-100 font-bold py-2 px-4 rounded-md hover:bg-gray-600">
+            Enviar mensaje por WhatsApp
+          </a>
+        </div>
+      </section>
+      
+    <section>
+      <h2 class="text-2xl font-semibold text-center text-gray-600">Trabajos: </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <img src="Trabajos/Bano1.jpg" alt="Ejemplo 1" class="rounded-lg shadow-md">
+        <img src="Trabajos/Escalera1.jpeg" alt="Ejemplo 2" class="rounded-lg shadow-md">
+        <img src="Trabajos/Pared1.jpeg" alt="Ejemplo 3" class="rounded-lg shadow-md">
+
+         <!-- Segunda fila de imágenes -->
+        <img src="Trabajos/Ventana1.jpg" alt="Ejemplo 4" class="rounded-lg shadow-md">
+        <img src="Trabajos/Piso1.jpeg" alt="Ejemplo 5" class="rounded-lg shadow-md">
+        <img src="Trabajos/Pared2.jpeg" alt="Ejemplo 6" class="rounded-lg shadow-md">
+
+        <!-- Tercera fila de imágenes -->
+        <img src="Trabajos/Ventana2.jpeg" alt="Ejemplo 7" class="rounded-lg shadow-md">
+        <img src="Trabajos/Piso2.jpeg" alt="Ejemplo 8" class="rounded-lg shadow-md">
+        <img src="Trabajos/Pared3.jpeg" alt="Ejemplo 9" class="rounded-lg shadow-md">
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 bg-gray-300 text-gray-700">
+    <p>&copy; 2024 Los Chambeadores.</p>
+  </footer>
+
+  <script>
+    function sendToWhatsApp() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+      const whatsappURL = `https://wa.me/529838316263?text=Nombre:%20${encodeURIComponent(name)}%0ATeléfono:%20${encodeURIComponent(phone)}%0AMensaje:%20${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+</body>
+</html>
